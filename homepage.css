@@ -60,7 +60,6 @@ p{
 .graybox2{
     margin-right: 10vw;margin-left: 5vw;
     width:500px;height:360px;
-    min-width: 390px;
     background-color:rgba(115,115,115,0.47);
 }
 
@@ -217,8 +216,8 @@ p{
     }
     .headshot{
         width:20vw;height:20vw;
-        min-width: 250px;
-        min-height: 250px;
+        min-width: 280px;
+        min-height: 280px;
         background-color:rgba(115,115,115,0.47);
         position: relative;
         margin: 0px;
@@ -230,7 +229,11 @@ p{
         position:absolute;right: 0px;bottom: 0px;
     }
     .graybox2{
+        height: 400px;
         margin-right: 5vmin;
+    }
+    .info img{
+        margin-top: 15px;
     }
     .skill{
         margin-top: 5vh;
@@ -422,5 +425,32 @@ p{
         height: 40vh;
         max-height: 420px;
         position: relative;
+    }
+}
+
+/*橫向*/
+@media screen and (orientation: landscape) and (max-width:1024px){
+    .text{
+        margin-top: 10vmin;
+    }
+    .exp{
+        margin-top: 6vmin;
+    }
+}
+@media screen and (orientation: landscape) and (max-width:900px){
+    .text h1,.exp h1{
+        font-size: 40px;
+    }
+    .text p,.exp p{
+        font-size: 20px;
+    }
+}
+@media screen and (orientation: landscape) and (max-width:800px){
+    .white_block{
+        width: auto; height: 80px;
+    }
+    .m_info{
+        height: 90vh;
+        max-height: 450px;
     }
 }

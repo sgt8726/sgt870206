@@ -279,3 +279,56 @@ p{
         margin: 20px auto;
     }
 }
+
+/*橫向*/
+@media screen and (orientation: landscape) and (max-width:1367px){
+    .wrapper{
+        width: 65%;
+        margin-left: 20%;
+    }
+    #qrcode{
+        width: 8.5vmin;height: 8.5vmin;
+    }
+    #qrcode2{
+        width: 8.5vmin;height: 8.5vmin;
+    }
+}
+@media screen and (orientation: landscape) and (max-width:1024px){
+    .wrapper{
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+@media screen and (orientation: landscape) and (max-width:900px){
+    .wrapper{
+        width: 60%;
+        margin-left: 23%;
+    }
+    .banner{
+        height: 410px;
+    }
+    .wrap,.wrap2{
+        width: 60%;
+        margin: 0px 20%;
+        flex-direction: column;
+    }
+}
+@media screen and (orientation: landscape) and (max-width:800px){
+    .wrapper{
+        width: 55%;
+        margin-left: 22.5%;
+    }
+    .banner{
+        height: 420px;
+    }
+    .wrap,.wrap2{
+        width: 60%;
+        margin: 0px 20%;
+        flex-direction: column;
+    }
+}
+@media screen and (orientation: landscape) and (max-width:600px){
+    .banner{
+        height: 360px;
+    }
+}

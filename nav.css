@@ -171,3 +171,14 @@ header{
         opacity: 0;
     }
 
+/*橫向*/
+@media screen and (orientation: landscape) and (max-width:900px){
+    .navigation a{
+        font-size: 7vmin;
+    }
+}
+@media screen and (orientation: landscape) and (max-width:800px){
+    .navigation a{
+        font-size: 24px;
+    }
+}
