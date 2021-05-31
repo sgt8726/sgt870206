@@ -315,8 +315,9 @@ p{
 }
 @media screen and (orientation: landscape) and (max-width:800px){
     .wrapper{
-        width: 55%;
-        margin-left: 22.5%;
+        width: 65%;
+        margin-top: 8%;
+        margin-left: 18%;
     }
     .banner{
         height: 420px;
@@ -328,6 +329,11 @@ p{
     }
 }
 @media screen and (orientation: landscape) and (max-width:600px){
+    .wrapper{
+        width: 65%;
+        margin-top: 12%;
+        margin-left: 18%;
+    }
     .banner{
         height: 360px;
     }

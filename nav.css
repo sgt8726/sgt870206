@@ -114,10 +114,10 @@ header{
     .navigation{
         margin: 0;
         width: 100%;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 20px);
         background-color: rgba(0, 0, 0, 0.822);
         position: absolute;
-        top: 80px;
+        top: 20px;
         left: -1000px;
         padding: 0;
     }
@@ -178,6 +178,30 @@ header{
     }
 }
 @media screen and (orientation: landscape) and (max-width:800px){
+    header{
+        height: 40px;
+    }
+    .signature{
+        display: none;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        width: 20px;height: 20px;
+        top: 10px;right: 10px;
+    }
+    .menu::before{
+        content: '';
+        position: absolute;
+        height: 1px;
+        left: -18px;
+        width: 30px;
+        background-color: white;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        box-shadow:0px 8px 0px white,0px -8px 0px white;
+    }
     .navigation a{
         font-size: 24px;
     }

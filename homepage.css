@@ -447,7 +447,7 @@ p{
 }
 @media screen and (orientation: landscape) and (max-width:800px){
     .white_block{
-        width: auto; height: 80px;
+        width: auto; height: 41px;
     }
     .m_info{
         height: 90vh;
