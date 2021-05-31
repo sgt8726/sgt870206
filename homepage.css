@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+/*通用設定*/
+*{
+    margin: 0px auto;
+    padding: 0px;
+    max-width: 1700px;
+}
+/*字體*/
+h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 60px;
+    margin-bottom: 4vh;
+}
+
+p{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 775;
+    font-size: 26px;
+    line-height: 1.7em;
+}
+/*---------------------------------------------------第一層---------------------------------------------------*/
+.hello{
+    display: flex;
+    margin-top: 100px;
+    position: relative;
+}
+
+.headshot{
+    width:450px;height:400px;
+    min-width: 300px;
+    min-height: 300px;
+    background-color:rgba(115,115,115,0.47);
+    position: relative;
+    margin: 0px;
+}
+
+.headshot img{
+    width: 300px;
+    min-width: 250px;
+    position:absolute;right: 0px;bottom: 0px;
+}
+
+.text{
+    margin:40px 0px 0px 150px;
+    max-width: 720px;
+}
+/*---------------------------------------------------第二層---------------------------------------------------*/
+.intro{
+    margin-top:100px; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.exp{
+    margin-left:230px
+}
+.exp p{
+    margin-bottom: 15px;
+}
+.graybox2{
+    margin-right: 10vw;margin-left: 5vw;
+    width:500px;height:360px;
+    min-width: 390px;
+    background-color:rgba(115,115,115,0.47);
+}
+
+.info{
+    margin-left:60px;margin-top:24px;
+}
+
+.info div{
+    margin-bottom: 40px;
+}
+
+.info img{
+    width:24px;
+}
+
+.info span{
+    position: relative;left: 15px;top: 4px;
+    font-family:"Montserrat",sans-serif;
+    letter-spacing:0px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.fb{
+    display: inline-block;vertical-align: top;
+}
+.fb img{
+    width: 40px;
+    transition: all 0.3s ease 0s;
+}
+
+.fb img:hover{
+    width: 60px;
+}
+
+.ig{
+    display: inline-block;vertical-align: top;
+}
+
+.ig img{
+    width: 70px;
+    margin-left: 40px;
+    transition: all 0.3s ease 0s;
+}
+
+.ig img:hover{
+    width: 90px;
+}
+/*---------------------------------------------------第三層---------------------------------------------------*/
+.skill{
+    display:flex;
+    margin-top:100px;
+    justify-content: space-between;
+}
+
+.sk{
+    margin-left:230px;
+    margin-right: 70px;
+}
+
+.sk img{
+    margin:10px 0px 0px 40px;
+    width: 100px;
+}
+
+.portfilo{
+    margin: 60px 200px auto 0px;
+}
+
+.portfilo img{
+    width: 400px;
+    transition: all 0.5s ease 0s;
+}
+
+.portfilo img:hover{
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+.portfilo p{
+    text-align: center;
+    position: relative;
+    z-index:1;
+}
+
+.graybox3{
+    margin-top: 100px;
+    width: 100%;height:20px;
+    background-color:rgba(115,115,115,0.47);
+}
+/*---------------------------------------------------桌機RWD---------------------------------------------------*/
+@media screen and (max-width:1300px){
+    .text{
+        margin-top: 2vw;
+    }
+    .exp,.sk{
+        margin-left:8vw
+    }
+    .portfilo{
+        margin: 60px 120px auto 0px;
+    }
+}
+@media screen and (max-width:1200px){
+    .headshot{
+        width:20vw;height:20vw;
+        min-width: 300px;
+        min-height: 300px;
+        background-color:rgba(115,115,115,0.47);
+        position: relative;
+        margin: 0px;
+    }
+    
+    .headshot img{
+        width: 10vw;
+        min-width: 250px;
+        position:absolute;right: 0px;bottom: 0px;
+    }
+    h1{
+        font-family: 'Lato', sans-serif;
+        font-size: 8vmin;
+        line-height: 3vh;
+    }
+    
+    p{
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 775;
+        font-size: 2.3vw;
+        line-height: 1.7em;
+    }
+    .text{
+        margin-top: 3vmin;
+        margin-left: 6vw;
+    }
+    .text p{
+        margin-top: 1vw;
+    }
+    .exp,.sk{
+        margin-left:6vw
+    }
+    .sk img{
+        margin:20px 0px 0px 40px;
+        width: 9vw;
+    }
+    .portfilo{
+        margin: 60px 80px auto 0px;
+    }
+}
+
+@media screen and (max-width:1024px){
+    h1{
+        font-family: 'Lato', sans-serif;
+        font-size: 6vmin;
+    }
+    .headshot{
+        width:20vw;height:20vw;
+        min-width: 250px;
+        min-height: 250px;
+        background-color:rgba(115,115,115,0.47);
+        position: relative;
+        margin: 0px;
+    }
+    
+    .headshot img{
+        width: 10vw;
+        min-width: 200px;
+        position:absolute;right: 0px;bottom: 0px;
+    }
+    .graybox2{
+        margin-right: 5vmin;
+    }
+    .skill{
+        margin-top: 5vh;
+    }
+    .text{
+        margin-top: 1vmin;
+        margin-left: 6vw;
+        margin-right: 4vw;
+    }
+    .exp,.sk{
+        margin-left:4vw
+    }
+    p{
+        font-size: 2.5vmin;
+    }
+    .text p {
+        margin-top: 1vmin;
+    }
+    .sk img{
+        margin-left: 2vw; margin-top: 2vw;
+        width: 9vw;
+    }
+    .portfilo img{
+        margin-left: 4vw;
+        margin-right: 2vw;
+        width: 35vw;
+    }
+    .graybox3{
+        margin-top: 10vh;
+    }
+}
+/*桌機隱藏*/
+@media screen and (min-width:769px) {
+    .m_info{
+        display: none;
+    }
+    .m_intro .head{
+        display: none;
+    }
+    .m_hello{
+        display: none;
+    }
+    .m_text{
+        display: none;
+    }
+    .m_portfilo{
+        display: none;
+    }
+    .m_skill{
+        display: none;
+    }
+    .white_block{
+        display: none;
+    }
+    .whitebox{
+        display: none;
+    }
+}
+
+/*---------------------------------------------------手機---------------------------------------------------*/
+@media screen and (max-width:768px){
+    .hello{
+        display: none;
+    }
+    .intro{
+        display: none;
+    }
+    .skill{
+        display: none;
+    }
+    .white_block{
+        width: auto; height: 80px;
+    }
+    .m_info{
+        background-color: rgba(115,115,115,0.47);
+        width: 100%;
+        height: 50vh;
+        max-height: 420px;
+        position: relative;
+    }
+    .message{
+        display: flex;margin:3vh 0px;
+    }
+    .message p{
+        font-weight: 500;
+        font-size:4vw;
+        display: inline-block;
+        height: 4vw;margin: auto 0px;
+    }
+    .message img{
+        width: 10vw;
+        max-width: 50px;
+        margin: 0px 2vw;
+    }
+    .m_info .head{
+        position: absolute;right: 0px; bottom: 0px;
+        width: 45vw;
+        max-width: 400px;
+        min-width: 290px;
+    }
+    .m_social{
+        display: flex;
+    }
+    .m_fb img{
+        width:9vw;
+        max-width: 50px;
+        transition: all 0.3s ease 0s;
+        margin: -5px 20px;
+    }
+    .m_ig img{
+        width:12vw;
+        max-width: 70px;
+        margin: -2px 0px;
+        transition: all 0.3s ease 0s;
+    }
+    .whitebox{
+        background-color: rgb(231, 231, 231); padding: 2vw;
+    }
+    .m_text{
+        margin:6vw 10vw;
+    }
+    .m_text ul{
+        list-style-type: disc;margin: 7vmax 0;
+    }
+    h1{
+        font-family: 'Lato', sans-serif;
+        font-size: 8vmin;
+        margin-bottom: 5vmin;
+    }
+    p{
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 775;
+        font-size: 4vmin;
+        margin: 2vw;
+    }
+    li{
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 775;
+        font-size: 4vmin;
+        margin: 2.5vmax 1vw;
+    }
+    .m_portfilo{
+        margin-top: 8vw;
+        text-align: center;
+    }
+    .m_portfilo img{
+        width: 80vw;
+        transition: all 0.5s ease 0s;
+    }
+    .m_skill{
+        margin: 8vw 14vw;
+    }
+    .m_skill img{
+        width: 17vw;
+        margin: 2.5vmin 3vmin;
+    }
+}
+@media screen and (max-width:600px){
+    .m_info{
+        background-color: rgba(115,115,115,0.47);
+        width: 100%;
+        height: 50vh;
+        max-height: 350px;
+        position: relative;
+    }
+    .m_info .head{
+        position: absolute;right: 0px; bottom: 0px;
+        width: 45vw;  
+        min-width: 200px;
+    }
+    .m_text ul{
+        margin: 5vmax 0;
+    }
+}
+
+@media screen and (max-width:400px){
+    .m_info .head{
+        position: absolute;right: 0px; bottom: 0px;
+        width: 40vw;  
+        min-width: 160px;
+    }
+}
+
+@media screen and (max-width:300px){
+    .m_info{
+        background-color: rgba(115,115,115,0.47);
+        width: 100%;
+        height: 40vh;
+        max-height: 420px;
+        position: relative;
+    }
+}
