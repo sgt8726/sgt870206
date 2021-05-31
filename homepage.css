@@ -362,16 +362,16 @@ p{
     }
     p{
         font-family: 'Noto Sans TC', sans-serif;
-        font-weight: 775;
-        font-size: 4vmin;
+        font-weight: 600;
+        font-size: 5vmin;
         margin: 2vw;
     }
     li{
         font-family: 'Noto Sans TC', sans-serif;
-        font-weight: 775;
-        font-size: 4vmin;
+        font-weight: 600;
+        font-size: 5vmin;
         margin: 2.5vmax 1vw;
-        line-height: 20px;
+        line-height: 6vmin;
     }
     .m_portfilo{
         margin-top: 8vw;
