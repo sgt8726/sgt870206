@@ -224,4 +224,7 @@ header{
     .orangebox{
         display: none;
     }
+    #menu_btn:checked ~ header .navigation{
+        left:0px;
+    }
 }
