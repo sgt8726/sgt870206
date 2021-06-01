@@ -447,10 +447,20 @@ p{
 }
 @media screen and (orientation: landscape) and (max-width:800px){
     .white_block{
-        width: auto; height: 41px;
+        width: auto; height: 40px;
     }
     .m_info{
         height: 90vh;
+        max-height: 450px;
+    }
+}
+@media screen and (orientation: landscape) and (max-width:700px){
+    .m_info .head{
+        width: 30vw;  
+        min-width: 160px;
+    }
+    .m_info{
+        height: 100vh;
         max-height: 450px;
     }
 }
