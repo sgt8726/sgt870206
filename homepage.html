@@ -7,21 +7,32 @@
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="homepage.css">
     <link rel="stylesheet" type="text/css" href="nav.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<body>
+<body >
     <input type="checkbox" id="menu_btn">
     <header>
-        <div class="signature">
-            <img src="image/signature.png"/>
-        </div>
-        <nav class="navigation">
-                <a href="homepage.html">about</a>
-                <a href="work.html">work</a>
-                <a href="">article</a>
-                <a class="mail" href="mailto:sgt870206@gmail.com">contact</a>
-        </nav>
-        <div class="orangebox">
-            <a href="mailto:sgt870206@gmail.com">contact</a>
+        <div class="container h-100">
+            <div class="row h-100 w-100 justify-content-between align-items-center" id="add_grid">
+                <div class="sin col-1 col-lg-2">
+                    <div class="signature ">
+                        <img src="image/signature.png"/>
+                    </div>
+                </div>
+                <div class="nav col-md-6 col-lg-5 w-100" id="add_grid_a">
+                    <div class="navigation">
+                            <a href="homepage.html">about</a>
+                            <a href="work.html">work</a>
+                            <a href="">article</a>
+                            <a class="mail" href="mailto:sgt870206@gmail.com">contact</a>
+                    </div>
+                </div>
+                <div class="org col-2 h-50">
+                    <div class="orangebox h-100 align-items-center">
+                        <a href="mailto:sgt870206@gmail.com">contact</a>
+                    </div>
+            </div>
         </div>
         <label for="menu_btn" class="menu"></label>
     </header>
@@ -76,10 +87,11 @@
         </div>
         <div class="text">
             <h1>HELLO</h1>
-            <p>我是邵竣德，居住於新北市，過去專注於產品設計、3D建模，
-                大四後開始接觸程式並以「布袋戲教學軟體」為題，
-                與幾位同學參與各項程式競賽，擔任組長及負責UX設計。
-                目前正以成為UI/UX設計師為目標。</p>
+            <p>我是邵竣德，喜歡以使用者的角度思考，期望
+                能設計出符合需求的產品。過去擅長於3D曲面、
+                機械製圖，大四後開始接觸python、dot net等程
+                式設計，目前正努力學習UI/UX及前端工程，期望
+                將來能朝向UX設計發展</p>
         </div>
     </div>
     <!--EXP和Info-->
@@ -119,6 +131,27 @@
     </div>
     
     <div class="graybox3"></div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript">
+        $(window).resize(function(){
+            if ($(window).width() >= 768) {  
+                $('#add_grid').removeClass('justify-content-between align-items-center')
+            }
+       });
+    </script>
+    <script type="text/javascript">
+        $(window).resize(function(){
+            if ($(window).width() >= 768) {  
+                $('#add_grid_a').removeClass('col-md-6 col-lg-5 w-100')
+            }
+       });
+    </script>
     
 </body>
 </html>

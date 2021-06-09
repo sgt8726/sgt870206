@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Tangerine');
 /*通用設定*/
-*{
-    margin: 0px auto;
-    padding: 0px;
-    max-width: 1700px;
-}
 /*字體*/
 h1{
     font-family: 'Lato', sans-serif;
@@ -305,7 +300,7 @@ p{
         display: none;
     }
     .white_block{
-        width: auto; height: 80px;
+        width: auto; height: 50px;
     }
     .m_info{
         background-color: rgba(115,115,115,0.47);

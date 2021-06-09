@@ -31,21 +31,30 @@
     </style>
 </head>
 
-<body>
+<body style="background-color: #f1f1f1;">
     <!--nav bar-->
-    <input type="checkbox" id="menu_btn">
+     <input type="checkbox" id="menu_btn">
     <header>
-        <div class="signature">
-            <img src="image/signature.png"/>
-        </div>
-        <nav class="navigation">
-                <a href="homepage.html">about</a>
-                <a href="work.html">work</a>
-                <a href="">article</a>
-                <a class="mail" href="mailto:sgt870206@gmail.com">contact</a>
-        </nav>
-        <div class="orangebox">
-            <a href="mailto:sgt870206@gmail.com">contact</a>
+        <div class="container h-100">
+            <div class="row h-100 w-100" id="add_grid">
+                <div class="sin col-1 col-lg-2">
+                    <div class="signature ">
+                        <img src="image/signature.png"/>
+                    </div>
+                </div>
+                <div class="nav" id="add_grid_a">
+                    <div class="navigation">
+                            <a href="homepage.html">about</a>
+                            <a href="work.html">work</a>
+                            <a href="">article</a>
+                            <a class="mail" href="mailto:sgt870206@gmail.com">contact</a>
+                    </div>
+                </div>
+                <div class="org col-2 h-50">
+                    <div class="orangebox h-100 align-items-center">
+                        <a href="mailto:sgt870206@gmail.com">contact</a>
+                    </div>
+            </div>
         </div>
         <label for="menu_btn" class="menu"></label>
     </header>
@@ -376,7 +385,27 @@
             Duration:2000
         });
         $("#flipbook").turn("page", 4);
-        
+    </script>
+    
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript">
+        $(window).resize(function(){
+            if ($(window).width() >= 768) {  
+                $('#add_grid').addClass('justify-content-between align-items-center')
+            }
+       });
+    </script>
+    <script type="text/javascript">
+        $(window).resize(function(){
+            if ($(window).width() >= 768) {  
+                $('#add_grid_a').addClass('col-md-6 col-lg-5 w-100')
+            }
+       });
     </script>
         
     

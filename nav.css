@@ -2,14 +2,12 @@
 header{
     background-color: black;
     width: 100%;
+    max-width: 1700px;
     height: 80px;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     position: relative;
 }
 .signature{
-    margin-left: 15vw;
     width:55px;height: 55px;
     border-radius:999em;
     border:2px white solid;
@@ -25,35 +23,33 @@ header{
     background-color:#585858d7;
     transform: scale(1.2);
 }
-
 .navigation{
-    margin:auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
-
 .navigation a{
+    display: block;
     font-family: 'KoHo', sans-serif;
     font-size: 32px;
     color: white;
     text-decoration: none;
     list-style:none;
     transition: all 0.3s ease 0s;
-    padding: 0px 3vw;
 }
 
 
 .orangebox{
-    margin-right: 180px;
     width: 180px;
-    height: 35px;
     background-color: #D9C11C;
     border-radius:15px;
     transition: all 0.3s ease 0s;
-    align-items: center;
     text-align: center;
-    
 }
 
 .orangebox a{
+    display: block;
+    line-height: 40px;
     font-family: 'KoHo', sans-serif;
     font-size: 32px;
     color:rgb(0, 0, 0);
@@ -64,38 +60,22 @@ header{
 }
 /*---------------------------------------------------桌機RWD---------------------------------------------------*/
 @media screen and (max-width:1300px){
-    .orangebox{
-        margin-right: 10vw;
-    }
+
 }
 
 @media screen and (max-width:1200px){
-    .orangebox{
-        margin-right: 8vw;
-    }
-    .signature{
-        margin-left: 15vw;
-    }
+
 }
 
 @media screen and (max-width:1024px){
-    .orangebox{
-        margin-right: 4vw;
-    }
-    .signature{
-        margin-left: 12vw;
-    }
-    .navigation a{
-        font-size: 4vmin;
-        padding: 0px 2vw;
-    }
+
 }
 /*桌機*/
 @media screen and (min-width:769px) {
     label{
         display: none;
     }
-    .mail{
+    header .mail{
         display: none;
     }
     .navigation a:hover{
@@ -106,54 +86,54 @@ header{
 }
 /*---------------------------------------------------手機---------------------------------------------------*/
 @media screen and (max-width:768px){
+    .org.col-2.h-50{display: none;}
+    .sin.col-1.col-lg-2{display: none;}
     header{
         position: fixed;
         top: 0;
         z-index: 2;
+        height: 50px;
     }
     .navigation{
         margin: 0;
-        width: 100%;
-        height: calc(100vh - 20px);
+        width: 100vw;
         background-color: rgba(0, 0, 0, 0.822);
         position: absolute;
-        top: 20px;
+        z-index: 10;
+        top: 50px;
         left: -1000px;
         padding: 0;
+        flex-direction:column ;
+        transition: all 0.3s ease 0s;
     }
     .navigation a{
+        margin-top: 10px;
+        padding-bottom: 10px;
         font-size: 24px;
-        display:block;
         text-decoration: none;
-        padding-top: 30px;
-        padding-bottom: 20px;
         border-bottom:1px solid white;
         text-align: center;
-    }
-    .orangebox{
-        display: none;
-    }
-    .signature{
-        margin-left: 45vw;
+        align-items: center;
     }
 
     .menu{
         display: block;
         position: absolute;
-        width: 60px;height: 60px;
-        top: 10px;right: 10px;
+        top:10px; right: 20px;
+        width: 30px;height: 30px;
+        
     }
     .menu::before{
         content: '';
         position: absolute;
         height: 2px;
         left: 12px;
-        width: 36px;
+        width: 24px;
         background-color: white;
         top: 0;
         bottom: 0;
         margin: auto;
-        box-shadow:0px 12px 0px white,0px -12px 0px white;
+        box-shadow:0px 10px 0px white,0px -10px 0px white;
     }
     #menu_btn:checked ~ header .navigation{
         left:0px;
@@ -173,59 +153,6 @@ header{
 
 /*橫向*/
 @media screen and (orientation: landscape) and (max-width:900px){
-    .navigation a{
-        font-size: 7vmin;
-    }
 }
 @media screen and (orientation: landscape) and (max-width:800px){
-    header{
-        height: 40px;
-    }
-    .signature{
-        display: none;
-    }
-    .menu{
-        display: block;
-        position: absolute;
-        width: 20px;height: 20px;
-        top: 10px;right: 10px;
-    }
-    .menu::before{
-        content: '';
-        position: absolute;
-        height: 1px;
-        left: -36px;
-        width: 30px;
-        background-color: white;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        box-shadow:0px 8px 0px white,0px -8px 0px white;
-    }
-    .navigation{
-        margin: 0;
-        width: 100%;
-        height: calc(100vh - 20px);
-        background-color: rgba(0, 0, 0, 0.822);
-        position: absolute;
-        top: 20px;
-        left: -1000px;
-        padding: 0;
-        z-index: 2;
-    }
-    .navigation a{
-        font-size: 24px;
-        display:block;
-        text-decoration: none;
-        padding-top: 30px;
-        padding-bottom: 20px;
-        border-bottom:1px solid white;
-        text-align: center;
-    }
-    .orangebox{
-        display: none;
-    }
-    #menu_btn:checked ~ header .navigation{
-        left:0px;
-    }
 }
